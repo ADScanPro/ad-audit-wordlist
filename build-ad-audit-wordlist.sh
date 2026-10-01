@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# ad-audit-wordlist — the AD audit wordlist I actually use, as a recipe you can
+# ad-audit-wordlist: the AD audit wordlist I actually use, as a recipe you can
 # rebuild yourself. It is a priority merge of two frequency-ordered lists,
 # de-duplicated keeping the FIRST occurrence so the frequency ordering survives:
 #
