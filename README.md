@@ -52,7 +52,7 @@ Mode `13100` is Kerberos 5, etype 23, TGS-REP: the standard hashcat mode for Ker
 
 This cracks the hash. It won't tell you what that account reaches. Once you own a service account, the audit question is which paths it opens and which ones end at Domain Admin.
 
-That's the other half: [ADscan](https://adscanpro.com)'s free CLI maps and executes the AD attack paths from a foothold, so you go from "I cracked a service account" to the route to the domain.
+That's the other half: [ADscan's free CLI](https://github.com/ADScanPro/adscan) maps and executes the AD attack paths from a foothold, so you go from "I cracked a service account" to the route to the domain.
 
 ## Credit
 
