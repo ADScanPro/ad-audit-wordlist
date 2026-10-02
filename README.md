@@ -48,6 +48,12 @@ hashcat -m 13100 kerberoast.hash combined_audit_base.txt -r OneRuleToRuleThemSti
 
 Mode `13100` is Kerberos 5, etype 23, TGS-REP: the standard hashcat mode for Kerberoasting.
 
+## What this won't tell you
+
+This cracks the hash. It won't tell you what that account reaches. Once you own a service account, the audit question is which paths it opens and which ones end at Domain Admin.
+
+That's the other half: [ADscan](https://adscanpro.com)'s free CLI maps and executes the AD attack paths from a foothold, so you go from "I cracked a service account" to the route to the domain.
+
 ## Credit
 
 [hashmob](https://hashmob.net/research) community, [The-Viper-One](https://gist.github.com/The-Viper-One) (kerberoast_pws), [Cynosureprime](https://github.com/Cynosureprime/rling) (rling), [Stealthsploit](https://github.com/stealthsploit/OneRuleToRuleThemStill) (OneRuleToRuleThemStill).
